@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Веб програмирование</title>
+    <link href="styles.css" rel="stylesheet">
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="index.html">Дом</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Главная <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <h1 class="nav-link">Вывести список заданий.</h1>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-form">
+    <form id="task-form">
+    </form>
+</div>
+
+<div class="page-table">
+    <table class="table table-hover table-border">
+        <thead class="thead-dark">
+        <tr>
+            <th scope="col">id</th>
+            <th scope="col">type</th>
+            <th scope="col">namberworkers</th>
+            <th scope="col">tenant_id</th>			
+            <th scope="col">time</th>
+            <th scope="col">complete</th>
+            <th scope="col">overdue</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="col">1</th>
+            <th scope="col">да</th>
+            <th scope="col">1</th>
+            <th scope="col">1</th>			
+            <th scope="col">1</th>
+            <th scope="col">false</th>
+            <th scope="col">false</th>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

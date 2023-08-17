@@ -1,0 +1,1 @@
+Работа с изображениями (Adaptive Threshold Binarizer)(Gradient Threshold Binarizer) (Histogram Threshold Binarizer) (Segmentation) 

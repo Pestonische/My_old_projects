@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">exam</string>
+    <string name="name">name</string>
+    <string name="name_last">Lname</string>
+    <string name="tel">Phone Number</string>
+    <string name="register">Register</string>
+    <string name="date">date</string>
+    <string name="date2">date2</string>
+    <string name="ok">Next</string>
+</resources>

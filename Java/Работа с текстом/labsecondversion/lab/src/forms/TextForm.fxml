@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="512.0" prefWidth="809.0" style="-fx-background-color: #00FF00;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TextController">
+   <children>
+      <Button fx:id="open" layoutX="14.0" layoutY="437.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="213.0" style="-fx-background-color: #FF0000;" text="Открыть файл" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="button" layoutX="544.0" layoutY="437.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="251.0" style="-fx-background-color: #007AFF;" text="Подтвердить" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Text fx:id="textFile" fill="#1e0c1e" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Файл:" textAlignment="CENTER" wrappingWidth="809.0">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Text>
+      <Button fx:id="openColor" layoutX="238.0" layoutY="437.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="297.0" style="-fx-background-color: #0000000;" text="Открыть результат" visible="false">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

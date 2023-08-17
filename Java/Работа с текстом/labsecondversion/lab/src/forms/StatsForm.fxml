@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="651.0" prefWidth="461.0" style="-fx-background-color: #00FF00;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StatsController">
+   <children>
+      <TableView fx:id="table" layoutX="14.0" layoutY="7.0" prefHeight="636.0" prefWidth="432.0">
+        <columns>
+          <TableColumn fx:id="tagTableColumn" prefWidth="228.0" text="Теги" />
+          <TableColumn fx:id="frequencyTableColumn" prefWidth="203.0" text="Частота" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

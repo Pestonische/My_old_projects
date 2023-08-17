@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap');
+
+body
+{
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 4rem;
+    padding-top: 2rem;
+    font-weight: 600;
+}
+ 
+h3 {
+    font-size: 2rem;
+    padding-top: 2rem;
+    font-weight: 600;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+h5 {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.row {
+    display: flex;
+}
+
+.page-form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 1rem;
+}
+
+.col-md-4 a:link, a:visited {
+    color: black;
+    text-decoration: none;
+}
+  
+.col-md-4 a:hover, a:active {
+    color: #f54966;
+    text-decoration: none;
+}
+
+.card
+{
+    margin: 1.5rem;
+    border-radius: 10px;
+    box-shadow: -10px 10px #fea0b0, 
+    -10px 10px 0px 2px black;
+    flex: 1;
+    padding: 1em;
+    border: solid; 
+}
+
+.col-md-3 .card, .sm-padding .col-md-4 .card
+{   
+    flex: 1;
+    border: solid; 
+    box-shadow: -10px 10px #1ea1ec, 
+    -10px 10px 0px 2px black;
+}
+
+.col-md-12 .card {
+    margin: 0;
+}
+
+.col .card{
+    margin: 0 0 1rem 0;
+}
+
+.card-body
+{
+    align-items:center;
+    justify-content:center;
+    display:flex;
+    padding: 0.5rem;
+}
+
+.md-padding
+{
+    padding: 1.5rem;
+}
+
+.sm-padding
+{
+    padding: 0;
+}
+
+.table{
+    margin: 0;
+}
+
+.table, tr, td, th{
+    border-bottom: 2px solid black  ; 
+}
+
+.table thead {
+    background-color: #fea0b0;
+    border-top: 2px solid black  ;  
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid black;
+}
+
+.page-form .btn
+{
+    background-color: black;
+    color: white;
+}
+
+.page-form label{
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+
+label.error {
+    color: #f54966;
+    font-size: 0.8rem;
+    display: block;
+    margin-top: 5px;
+}
+
+input.error {
+    border: 2px solid #f54966;
+    font-weight: 400;
+    color: #f54966;
+}
+
+input.valid.success-handle, label.valid.success-handle {
+    border: 2px solid #4CAF50;
+    color: green;
+}

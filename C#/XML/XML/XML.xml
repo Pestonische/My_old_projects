@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<!DOCTYPE taskset [
+<!ELEMENT taskset (task+)>
+<!ELEMENT task (description+, condition, description+, metafile+, description+, metafile+, description+, 
+time_constraint, description+, memory_limitation, description+, authorsset)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT condition EMPTY>
+<!ELEMENT metafile EMPTY>
+<!ELEMENT time_constraint EMPTY>
+<!ELEMENT memory_limitation EMPTY>
+<!ELEMENT authorsset (authors+)>
+<!ELEMENT authors EMPTY>
+<!ATTLIST task name CDATA #REQUIRED>
+<!ATTLIST condition condition CDATA #REQUIRED>
+<!ATTLIST metafile name CDATA #REQUIRED
+          type (input|output) #REQUIRED
+		  alias (in|out) "in">
+<!ATTLIST time_constraint time CDATA #REQUIRED>
+<!ATTLIST memory_limitation memory CDATA #REQUIRED>
+<!ATTLIST authors surname CDATA #REQUIRED
+          name CDATA #REQUIRED
+		  middle_name CDATA #REQUIRED
+		  type_of_work CDATA #REQUIRED>
+]>
+<taskset>
+<task name="Задача «Груша»">
+      <description>Первая задача отбора к олимпиаде</description>
+      <description>Условие</description>
+<condition condition="Назовём «грушей» фигуру на плоскости, составленную из 
+четырёх отрезков. Три из них образуют невырожденный равнобедренный треугольник,
+а четвёртый отрезок выходит из вершины этого треугольника 
+при равных сторонах и направлен в сторону, противоположную высоте,
+опущенной из этой вершины. На плоскости заданы N различных отрезков ненулевой длины.
+Сколько «груш» можно составить из различных четвёрок этих отрезков?"/>
+      <description>Данные входного файла</description>
+<metafile name="pear.in" type="input" alias= "in"/>
+      <description>Данные выходного файла</description>
+<metafile name="pear.out" type="output" alias= "out"/>
+      <description>Ограничение по времени</description>
+<time_constraint time="1 c"/>
+      <description>Ограничение по памяти</description>
+<memory_limitation memory="256 МБ"/>
+      <description>Авторы</description>
+<authorsset>
+<authors surname="Иванов" name="Иван" middle_name="Иванович" type_of_work="автор идеи"/>
+<authors surname="Иванова" name="Ирина" middle_name="Ивановна" type_of_work="автор условия"/>
+<authors surname="Никитин" name="Павел" middle_name="Максимович" type_of_work="автор решения"/>
+<authors surname="Лихачёв" name="Вячеслав" middle_name="Васильевич" type_of_work="составитель тестов"/>
+</authorsset>
+</task>
+<task name="Задача Летние сборы">
+       <description>Вторая задача отбора к олимпиаде</description>
+       <description>Условие</description>
+<condition condition="Как вам наверное, известно, в командных соревнованиях по 
+программированию по правилам ACM участвуют команды, составленные из трёх человек... 
+Комитет по образованию Мингорисполкома решил организовать летние сборы по подготовке к таким соревнованиям. 
+Для этого были зарезервированы K мест в одном из детских оздоровительных лагерей, наняты преподаватели,
+открыт приём заявок от школьников, перешедших в этом году  в 10-е и 11-е классы. 
+Работники комитета считают, что хорошая команда должна состоять из одного десятиклассника
+и двух учеников 11-х классов, а составы команд будут определены по окончании сборов.
+От учреждений образования поступило M заявок на 11-классников и N — на учеников 10-х классов.
+Определите максимальное количество команд, которые можно сформировать из участников сборов 
+при соблюдении указанных выше условий."/>
+       <description>Данные входного файла</description>
+<metafile name="стандартный ввод" type="input" alias= "in"/>
+       <description>Данные выходного файла</description>
+<metafile name="стандартный вывод" type="output" alias= "out"/>
+       <description>Ограничение по времени</description>
+<time_constraint time="1 c"/>
+       <description>Ограничение по памяти</description>
+<memory_limitation memory="32 МБ"/>
+       <description>Авторы</description>
+<authorsset>
+<authors surname="Миклашевский" name="Устин" middle_name="Платонович" type_of_work="автор идеи, автор условия, автор решения"/>
+<authors surname="Коровяк" name="Артём" middle_name="Григорьевич" type_of_work="составитель тестов"/>
+</authorsset>
+</task>
+<task name="Задача к олимпиаде по информатике">
+      <description>Третия задача отбора к олимпиаде</description>
+      <description>Условие</description>
+<condition condition="Семиклассник Вася учится в футбольной академии. 
+Со временем он обещает вырасти в хорошего футболиста, а сейчас он упорно тренируется.
+На сегодняшней тренировке тренер поручил Васе выполнить N пенальти в пустые ворота
+и считает количество попаданий и промахов. Особенно интересует тренера количество 
+попаданий между первым и вторым промахами Васи. Сможете ли Вы вычислить эту величину?"/>
+      <description>Данные входного файла</description>
+<metafile name="стандартный ввод" type="input" alias= "in"/>
+      <description>Данные выходного файла</description>
+<metafile name="стандартный вывод" type="output" alias= "out"/>
+      <description>Ограничение по времени</description>
+<time_constraint time="1 c"/>
+      <description>Ограничение по памяти</description>
+<memory_limitation memory="32 МБ"/>
+      <description>Авторы</description>
+<authorsset>
+<authors surname="Семёнов" name="Юлий" middle_name="Владимирович" type_of_work="автор идеи, автор условия, автор решения, составитель тестов"/>
+</authorsset>
+</task>     
+<task name="Задача Треугольники">
+      <description>Четвертая задача отбора к олимпиаде</description>
+      <description>Условие</description>
+<condition condition="На листе бумаги нарисован правильный треугольник со стороной, равной n. 
+После этого рисунок разбит на единичные треугольники, как показано на рисунке для n = 3.
+Сколько различных треугольников вы сможете найти на этом рисунке?
+Треугольники считаются различными, если они различаются либо по размерам, либо по расположению."/>
+      <description>Данные входного файла</description>
+<metafile name="triangles.in" type="input" alias= "in"/>
+      <description>Данные выходного файла</description>
+<metafile name="triangles.out" type="output" alias= "out"/>
+      <description>Ограничение по времени</description>
+<time_constraint time="2 c"/>
+      <description>Ограничение по памяти</description>
+<memory_limitation memory="256 МБ"/>
+      <description>Авторы</description>
+<authorsset>
+<authors surname="Агафонова" name="Инесса" middle_name="Станиславовна" type_of_work="автор идеи"/>
+<authors surname="Никитина" name="Мальвина" middle_name="Евгеньевна" type_of_work="автор условия"/>
+<authors surname="Кулагина" name="Гера" middle_name="Максимовна" type_of_work="автор решения"/>
+<authors surname="Токар" name="Гаянэ" middle_name="Валерьевна" type_of_work="составитель тестов"/>
+</authorsset>
+</task>
+</taskset>

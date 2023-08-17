@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<persistence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+    http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd"
+             version="2.2">
+
+    <persistence-unit name="Test_Local" transaction-type="RESOURCE_LOCAL">
+        <class>model.entity.Request</class>
+        <class>model.entity.Tenant</class>
+        <class>model.entity.Worker</class>
+
+        <properties>
+            <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/> <!-- DB Driver -->
+            <property name="javax.persistence.jdbc.url"
+                      value="jdbc:postgresql://localhost:5432/postgres"/> <!-- BD Mane -->
+            <property name="javax.persistence.jdbc.user" value="postgres"/> <!-- DB User -->
+            <property name="javax.persistence.jdbc.password" value="1234"/> <!-- DB Password -->
+            <property name="hibernate.show_sql" value="false"/>
+            <!-- Show SQL in console -->
+
+            <property name="hibernate.format_sql" value="false"/>
+            <!-- Show SQL formatted -->
+        </properties>
+    </persistence-unit>
+
+</persistence>

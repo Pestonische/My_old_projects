@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29418.71
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zadacha 2.08", "zadacha 2.08\zadacha 2.08.csproj", "{9BE13B94-915E-486C-8D6C-C40FE9782554}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9BE13B94-915E-486C-8D6C-C40FE9782554}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BE13B94-915E-486C-8D6C-C40FE9782554}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BE13B94-915E-486C-8D6C-C40FE9782554}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BE13B94-915E-486C-8D6C-C40FE9782554}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {768F5421-79CC-4CF9-9A5B-24FA5338ABAD}
+	EndGlobalSection
+EndGlobal

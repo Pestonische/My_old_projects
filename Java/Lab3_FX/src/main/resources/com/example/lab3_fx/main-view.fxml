@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="20.0" style="-fx-background-color: #B5B8B1;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="com.example.lab3_fx.ImageProcessorController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+     <ComboBox fx:id="cbAction" onAction="#onActionChanged" style="-fx-background-color: #FBCEB1;">
+         <items>
+             <FXCollections fx:factory="observableArrayList">
+                 <String fx:value="Histogram Global Threshold" />
+                 <String fx:value="Gradient Global Threshold" />
+                 <String fx:value="Adaptive Threshold" />
+                 <String fx:value="Segmentation" />
+             </FXCollections>
+         </items>
+     </ComboBox>
+     <Button onAction="#onChooseFileButtonClick" style="-fx-background-color: #FBCEB1;" text="Выбрать файл" />
+    <HBox spacing="20.0" xmlns:fx="http://javafx.com/fxml">
+        <ImageView fx:id="srcImg" />
+        <ImageView fx:id="processedImg" />
+    </HBox>
+</VBox>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="801.0" prefWidth="1100.0" style="-fx-background-color: #3039;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MenuController">
+   <children>
+      <Button fx:id="showButton" layoutX="321.0" layoutY="272.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="471.0" style="-fx-background-color: #8B008B;" text="Просмотр словаря" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="addButton" layoutX="321.0" layoutY="349.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="471.0" style="-fx-background-color: #8B008B;" text="Добавить слово" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="deleteButton" layoutX="321.0" layoutY="501.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="471.0" style="-fx-background-color: #8B008B;" text="Удаление слов" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="correctButton" layoutX="321.0" layoutY="423.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="471.0" style="-fx-background-color: #8B008B;" text="Корректировать слово" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="fileButton" layoutX="321.0" layoutY="128.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="471.0" style="-fx-background-color: #8B008B;" text="Открыть текст" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="save" layoutX="321.0" layoutY="571.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="471.0" style="-fx-background-color: #8B008B;" text="Сохранить словарь" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="vocButton" layoutX="321.0" layoutY="200.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="471.0" style="-fx-background-color: #8B008B;" text="Открыть словарь" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="reset" layoutX="321.0" layoutY="712.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="471.0" style="-fx-background-color: #8B008B;" text="Обновить настройки" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="colorButton" layoutX="321.0" layoutY="641.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="471.0" style="-fx-background-color: #8B008B;" text="Раскрасить текст " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="ise" layoutX="641.0" layoutY="814.0" mnemonicParsing="false" opacity="0.0" prefHeight="64.0" prefWidth="471.0" style="-fx-background-color: #8B008B;" text="ISE algorithm" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Text fill="#f8f8f8" layoutX="453.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Словарь">
+         <font>
+            <Font name="System Bold" size="50.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>

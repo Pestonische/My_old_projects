@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hotel</title>
+    <link rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" 
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" 
+    crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <a href="index.html"><h3 align = "center">Hotel</h3></a>
+    <p align = "center">Подтвердите одно из необработанных бронирований ниже
+    </p>
+    
+    <div class="sm-padding">    
+                <div class="card-body">
+                  <div class="page-form" >
+                    <div class="page-form" >
+                      <form class="form-signin" method="post"
+                            action="${pageContext.request.contextPath}/serv?command=login">
+                          <h1>Вход</h1>
+                          <input id="inputName" name = "inputName" class="form-control" placeholder="User" required="" autofocus="">
+                          <label>Неправильное имя пользователя</label>
+                          <input type="password" id="inputPassword" name="inputPassword" class="form-control" placeholder="Password" required="">
+                          <label>Неверный пароль</label>
+                          <button   class="btn btn-lg btn-primary btn-block" type="submit" href="index.html">Log in</button>
+                      </form>
+                  </div>
+                </div>
+              </div>   
+            </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html> 

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="278.0" prefWidth="400.0" style="-fx-background-color: #00FF00;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EditWordController">
+   <children>
+      <Label layoutX="14.0" layoutY="12.0" text="Слово">
+         <font>
+            <Font name="Cambria" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="52.0" text="Новое слово">
+         <font>
+            <Font name="Cambria" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="oldWordTF" layoutX="137.0" layoutY="9.0" />
+      <TextField fx:id="newWordTF" layoutX="137.0" layoutY="52.0" />
+      <Button fx:id="okButton" layoutX="15.0" layoutY="239.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="111.0" style="-fx-background-color: #FF0000;" text="заменить" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <Button fx:id="cancelButton" layoutX="274.0" layoutY="236.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="111.0" style="-fx-background-color: #007AFF;" text="вернуться " textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <Button fx:id="searchButton" layoutX="320.0" layoutY="9.0" mnemonicParsing="false" text="Поиск" />
+      <Label layoutX="14.0" layoutY="88.0" text="Теги">
+         <font>
+            <Font name="Cambria" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="166.0" text="Каноническая форма">
+         <font>
+            <Font name="Cambria" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tagsTF1" layoutX="134.0" layoutY="85.0" prefHeight="31.0" prefWidth="129.0" />
+      <TextField fx:id="canonicTF11" layoutX="222.0" layoutY="166.0" />
+      <Label layoutX="15.0" layoutY="126.0" text="Канонические теги">
+         <font>
+            <Font name="Cambria" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="canTagsTF11" layoutX="222.0" layoutY="124.0" prefHeight="31.0" prefWidth="149.0" />
+   </children>
+</AnchorPane>
