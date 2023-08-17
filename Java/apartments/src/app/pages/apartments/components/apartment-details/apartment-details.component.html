@@ -1,0 +1,52 @@
+<div class="apartment-details">
+  <div class="row">
+    <div class="col">
+      <div class="apartment-details__item">
+        <b class="fs-4">Apartment information</b>
+      </div>
+      <div class="apartment-details__item">
+        <b>Price: </b> {{apartment?.price}} bucks
+      </div>
+      <div class="apartment-details__item">
+        <b>Capacity: </b> {{apartment?.capacity}}
+      </div>
+      <div class="apartment-details__item">
+        <b>Type: </b> {{apartment?.type}}
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="apartment-details__item">
+        <b class="fs-4">Booking information</b>
+      </div>
+      <ng-template [ngIf]="!receipt" [ngIfElse]="booking_details">
+        <div class="apartment-details__item">
+          <b>No booking information</b>
+        </div>
+      </ng-template>
+      <ng-template #booking_details>
+        <div class="apartment-details__item">
+          <b>Receipt id: </b> {{receipt?.id}}
+        </div>
+        <div class="apartment-details__item">
+          <b>Is Paid? </b> {{receipt?.isPaid}}
+        </div>
+        <div class="apartment-details__item">
+          <b>Booking id: </b> {{receipt?.booking?.id}}
+        </div>
+        <div class="apartment-details__item">
+          <b>Client: </b> {{receipt?.booking?.client?.name}}
+        </div>
+        <div class="apartment-details__item">
+          <b>Guests: </b> {{receipt?.booking?.guests}}
+        </div>
+        <div class="apartment-details__item">
+          <b>Arrival Time: </b> {{receipt?.booking?.arrivalTime | date: 'yyyy-MM-dd HH:mm'}}
+        </div>
+        <div class="apartment-details__item">
+          <b>Departure Time: </b> {{receipt?.booking?.departureTime | date: 'yyyy-MM-dd HH:mm'}}
+        </div>
+      </ng-template>
+    </div>
+  </div>
+</div>

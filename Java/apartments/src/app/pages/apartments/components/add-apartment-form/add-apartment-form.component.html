@@ -1,0 +1,50 @@
+<div class="p-4 mb-4 bg-light border rounded-3">
+  <div class="container-fluid py-2">
+    <h1 class="display-6 fw-bold">Add new apartment</h1>
+    <div class="form row g-3 needs-validation" [formGroup]="form" novalidate>
+
+      <div class="col-auto">
+        <label class="form-label">Apartment capacity: </label>
+        <input
+          type="number"
+          formControlName="capacity"
+          class="form-control"
+          [class.is-invalid]="form.controls.capacity.invalid && form.controls.capacity.dirty"
+        />
+        <div class="invalid-feedback">Invalid capacity value</div>
+      </div>
+
+      <div class="col-auto">
+        <label class="form-label">Apartment price: </label>
+        <input
+          type="number"
+          formControlName="price"
+          class="form-control"
+          [class.is-invalid]="form.controls.price.invalid && form.controls.price.dirty"
+        />
+        <div class="invalid-feedback">Invalid price value</div>
+      </div>
+
+      <div class="col-auto">
+        <label class="form-label">Apartment type: </label>
+        <select
+          class="form-control"
+          formControlName="type"
+          [class.is-invalid]="form.controls.type.invalid && form.controls.type.dirty"
+        >
+          <option selected value="">Choose...</option>
+          <ng-container *ngFor="let type of roomTypes">
+            <option [value]="type">{{type}}</option>
+          </ng-container>
+        </select>
+        <div class="invalid-feedback">{{form.controls.type.errors}}</div>
+      </div>
+
+      <div class="row-auto">
+        <button class="btn btn-dark" (click)="onSubmit()" [disabled]="!form.valid">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+

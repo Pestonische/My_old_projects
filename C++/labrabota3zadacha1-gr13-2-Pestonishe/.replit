@@ -1,0 +1,2 @@
+language = "c"
+run = "gcc -o task3-1 main.c"

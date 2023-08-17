@@ -1,0 +1,17 @@
+<ul class="list-group">
+  <ng-container *ngFor="let item of items; let index = index">
+    <li
+      (click)="onItemClick(index)"
+      [class.active]="index == activeItem"
+      class="list-group-item p-3"
+    >
+      <div>Apartment <b>№{{item.id}}</b></div>
+    </li>
+
+    <ng-container *ngIf="activeItem == index">
+      <li class="list-group-item p-1">
+        <apartment-details [apartment]="item"></apartment-details>
+      </li>
+    </ng-container>
+  </ng-container>
+</ul>
